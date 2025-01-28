@@ -1,5 +1,8 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
+import { DiPostgresql } from "react-icons/di";
+import { FaDocker, FaNodeJs, FaPython } from "react-icons/fa";
+import { SiAppwrite, SiKubernetes } from "react-icons/si";
 
 export const DATA = {
   name: "Umar Farooq",
@@ -12,20 +15,38 @@ export const DATA = {
   summary: `Computer science undergrad specializing in full-stack development. Built production-ready projects like e-commerce stores and blogs using the MERN stack. Currently seeking internships or freelance opportunities to create impactful web solutions and expand my expertise.`,
   avatarUrl: "/umarfarooq.jpg",
   skills: [
-    "React",
-    "Next.js",
-    "JavaScript",
-    "TypeScript",
-    "Django",
-    "Node.js",
-    "MongoDB",
-    "PostgreSQL",
-    "Git",
-    "Linux",
-    "Tailwind CSS",
-    "Appwrite",
-    "Prisma",
-    "AWS",
+    {
+      name: "Next.js",
+      icon: <Icons.nextjs className="size-3" />,
+    },
+    {
+      name: "Typescript",
+      icon: <Icons.typescript className="size-3" />,
+    },
+    {
+      name: "Node.js",
+      icon: <FaNodeJs className="size-3" />,
+    },
+    {
+      name: "Python",
+      icon: <FaPython className="size-3" />,
+    },
+    {
+      name: "Postgres",
+      icon: <DiPostgresql className="size-3" />,
+    },
+    {
+      name: "Docker",
+      icon: <FaDocker className="size-3" />,
+    },
+    {
+      name: "Kubernetes",
+      icon: <SiKubernetes className="size-3" />,
+    },
+    {
+      name: "Appwrite",
+      icon: <SiAppwrite className="size-3" />,
+    },
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -115,15 +136,33 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Blog Website",
+      title: "Quality Keeper",
       href: "",
-      dates: "2024",
+      dates: "2025",
       active: true,
       description:
-        "A blogging platform built with Next.js and Tailwind CSS, allowing users to read, write, and manage blog posts. Features include markdown support and a clean, responsive design.",
-      technologies: ["React.js", "Tailwind CSS", "Appwrite", "Tinymce"],
-      links: [],
-      image: "",
+        "Our AI-driven platform optimizes images and videos by compressing them while maintaining quality. It automatically adjusts images to fit social media aspect ratios, ensuring important elements aren’t cropped",
+      technologies: [
+        "Next.js",
+        "Tailwind CSS",
+        "prisma",
+        "cloudinary",
+        "shadcn",
+        "clerk",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://quality-keeper.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Farooq7234/ai-saas-cloudinary",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/quality-keeper.png",
       video: "",
     },
     {
