@@ -1,8 +1,11 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 import { DiPostgresql } from "react-icons/di";
-import { FaDocker, FaNodeJs, FaPython } from "react-icons/fa";
-import { SiAppwrite, SiKubernetes } from "react-icons/si";
+import { FaNodeJs, FaPython } from "react-icons/fa";
+import { SiAppwrite, SiMongodb, SiExpress, SiDjango } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaReact } from "react-icons/fa6";
+import { RiTailwindCssFill } from "react-icons/ri";
 
 export const DATA = {
   name: "Umar Farooq",
@@ -12,7 +15,7 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/Vellore",
   description:
     "I tinker around with my beloved laptop, exploring tools and bringing ideas to life through code",
-  summary: `Computer science undergrad specializing in full-stack development. Built production-ready projects like e-commerce stores and blogs using the MERN stack. Currently seeking internships or freelance opportunities to create impactful web solutions and expand my expertise.`,
+  summary: `I am Umar Farooq, a third-year Bachelor of Engineering student from India, currently studying Computer Science Engineering. As a **Full-stack Developer**, I enjoy both frontend and backend development equally. I am passionate about learning new technologies and building innovative projects that solve real-world problems.`,
   avatarUrl: "/umarfarooq.jpg",
   skills: [
     {
@@ -20,12 +23,36 @@ export const DATA = {
       icon: <Icons.nextjs className="size-3" />,
     },
     {
+      name: "React.js",
+      icon: <FaReact className="size-3" />,
+    },
+    {
+      name: "JavaScript",
+      icon: <IoLogoJavascript className="size-3" />,
+    },
+    {
       name: "Typescript",
       icon: <Icons.typescript className="size-3" />,
     },
     {
+      name: "Tailwind CSS",
+      icon: <RiTailwindCssFill className="size-3" />,
+    },
+    {
       name: "Node.js",
       icon: <FaNodeJs className="size-3" />,
+    },
+    {
+      name: "Express.js",
+      icon: <SiExpress className="size-3" />,
+    },
+    {
+      name: "MongoDB",
+      icon: <SiMongodb className="size-3" />,
+    },
+    {
+      name: "Django",
+      icon: <SiDjango className="size-3" />,
     },
     {
       name: "Python",
@@ -34,14 +61,6 @@ export const DATA = {
     {
       name: "Postgres",
       icon: <DiPostgresql className="size-3" />,
-    },
-    {
-      name: "Docker",
-      icon: <FaDocker className="size-3" />,
-    },
-    {
-      name: "Kubernetes",
-      icon: <SiKubernetes className="size-3" />,
     },
     {
       name: "Appwrite",
@@ -68,7 +87,7 @@ export const DATA = {
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://linkedin.com/in/umarfarooqdev7390", // Replace with your actual LinkedIn URL
+        url: "https://linkedin.com/in/umarfarooqdev7390",
         icon: Icons.linkedin,
         navbar: true,
       },
@@ -98,7 +117,7 @@ export const DATA = {
       start: "2024",
       end: "Present",
       description:
-        "Worked on various freelance projects, including building responsive websites, implementing user authentication, and creating RESTful APIs using the MERN stack. Developed an e-commerce platform with product search functionality, CRUD operations, and Appwrite database integration.",
+        "Worked on various freelance projects, including building responsive websites, implementing user authentication, and creating RESTful APIs using the MERN stack.",
     },
   ],
   education: [
