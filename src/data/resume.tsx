@@ -132,30 +132,7 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "E-Commerce Website",
-      href: "https://e-commerce-react-js-six.vercel.app/",
-      dates: "2024",
-      active: true,
-      description:
-        "Developed a fully functional e-commerce platform using React.js, Tailwind CSS, and Appwrite. Features include product search, user authentication, and a responsive design. Dark mode functionality added for better user experience.",
-      technologies: ["React.js", "Tailwind CSS", "Appwrite", "JavaScript"],
-      links: [
-        {
-          type: "Website",
-          href: "https://e-commerce-react-js-six.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/Farooq7234/E_Commerce_ReactJS",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/e-commerce-website.png",
-      video: "",
-    },
-    {
-      title: "Quality Keeper",
+      title: "Quality Keeper - AI SAAS",
       href: "",
       dates: "2025",
       active: true,
@@ -185,7 +162,37 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Anonymous Feedback Website",
+      title: "ReelsPro - Video Sharing Platform",
+      href: "",
+      dates: "2025",
+      active: true,
+      description:
+        "Developed a video-sharing platform similar to Instagram Reels, allowing users to upload, like, and comment on videos. Built using Next.js, Tailwind CSS, and MongoDB.",
+      technologies: [
+        "Next.js",
+        "Tailwind CSS",
+        "MongoDB",
+        "ImageKit",
+        "DaisyUI",
+        "next-auth.js",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://reelspro-beige.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Farooq7234/reelspro",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/.",
+      video: "",
+    },
+    {
+      title: "TrueFeedBack - Anonymous Feedback",
       href: "https://true-feed-back-gules.vercel.app/",
       dates: "2024",
       active: true,
@@ -196,7 +203,8 @@ export const DATA = {
         "React.js",
         "Tailwind CSS",
         "shadcn",
-        "auth.js",
+        "MongoDB",
+        "next-auth.js",
         "resend",
         "zod",
       ],
@@ -213,6 +221,29 @@ export const DATA = {
         },
       ],
       image: "/truefeedback.png",
+      video: "",
+    },
+    {
+      title: "Organic Store - E-Commerce",
+      href: "https://e-commerce-react-js-six.vercel.app/",
+      dates: "2024",
+      active: true,
+      description:
+        "Developed a fully functional e-commerce platform using React.js, Tailwind CSS, and Appwrite. Features include product search, user authentication, and a responsive design. Dark mode functionality added for better user experience.",
+      technologies: ["React.js", "Tailwind CSS", "Appwrite"],
+      links: [
+        {
+          type: "Website",
+          href: "https://e-commerce-react-js-six.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Farooq7234/E_Commerce_ReactJS",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/e-commerce-website.png",
       video: "",
     },
   ],
