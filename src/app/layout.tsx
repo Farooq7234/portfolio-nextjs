@@ -16,15 +16,15 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
   title: {
-    default: DATA.name,
+    default: `Hi, I'm ${DATA.name}`,
     template: `%s | ${DATA.name}`,
   },
   description: DATA.description,
   openGraph: {
-    title: `${DATA.name}`,
+    title: `Hi, I'm ${DATA.name}`,
     description: DATA.description,
     url: DATA.url,
-    siteName: `${DATA.name}`,
+    siteName: `Hi, I'm ${DATA.name}`,
     locale: "en_US",
     type: "website",
   },

@@ -1,6 +1,7 @@
 import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
+import { SmoothCursor } from "@/components/magicui/smooth-cursor";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -17,6 +18,7 @@ export default function Page() {
       {" "}
       <>
         <main className="flex flex-col min-h-[100dvh] space-y-10 ">
+          <SmoothCursor/>
           <section id="hero">
             <div className="mx-auto w-full max-w-2xl space-y-8">
               <div className="gap-2 flex justify-between">
