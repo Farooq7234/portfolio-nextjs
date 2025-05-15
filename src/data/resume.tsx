@@ -167,7 +167,7 @@ export const DATA = {
       dates: "2025",
       active: true,
       description:
-        "Developed a video-sharing platform similar to Instagram Reels, allowing users to upload, like, and comment on videos. Built using Next.js, Tailwind CSS, and MongoDB.",
+        "Developed a video-sharing platform similar to Instagram Reels, allowing users to upload. Built using Next.js, Tailwind CSS, and MongoDB.",
       technologies: [
         "Next.js",
         "Tailwind CSS",
