@@ -222,7 +222,7 @@ export default function Page() {
                       Client feedback
                     </h2>
                     <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                      From collaborating with local businesses to partnering with international clients, I've had the privilege of working with a diverse range of people. Here's what they have to say about our work together.
+                      From collaborating with local businesses to partnering with international clients, I&apos;ve had the privilege of working with a diverse range of people. Here&apos;s what they have to say about our work together.
                     </p>
                   </div>
             <Testimonial/>
