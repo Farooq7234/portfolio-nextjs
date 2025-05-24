@@ -1,6 +1,7 @@
 import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
+import { ShimmerButton } from "@/components/magicui/shimmer-button";
 import { SmoothCursor } from "@/components/magicui/smooth-cursor";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
@@ -168,6 +169,15 @@ export default function Page() {
                 ))}
               </div>
             </div>
+          </section>
+          <section className="flex justify-center items-center" id="load-more-projects">
+            <Link href="https://sparkling-cardinal-fde.notion.site/Projects-1ebd9e28b0d480f4a279ccc4ae611e03?pvs=4" target="_blank" rel="noopener noreferrer">
+              <ShimmerButton className="shadow-2xl">
+                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-sm">
+                  More Projects
+                </span>
+              </ShimmerButton>
+            </Link>
           </section>
           <section id="hackathons">
             <div className="space-y-12 w-full py-12">
