@@ -311,5 +311,20 @@ export const DATA = {
         },
       ],
     },
+    {
+      title: "SkillSphere - Skill Development Platform",
+      dates: "2025",
+      location: "Remote",
+      description:
+        "Created a comprehensive skill development platform featuring user authentication, live sessions scheduling, and a user-friendly interface for skill enhancement.",
+      image: "/st.joseph-logo.jpg",
+      links: [
+        {
+          title: "Source",
+          href: "https://github.com/Farooq7234/skill-sphere",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+    },
   ],
 } as const;
