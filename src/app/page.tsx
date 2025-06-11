@@ -9,7 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
-import { ShinyButton } from "@/components/magicui/shiny-button";
+import { RainbowButton } from "@/components/magicui/rainbow-button";
 
 
 const BLUR_FADE_DELAY = 0.04;
@@ -171,11 +171,13 @@ export default function Page() {
               </div>
             </div>
           </section>
-          <section className="flex justify-center items-center" id="load-more-projects">
+         <BlurFade delay={BLUR_FADE_DELAY * 12 * 0.05}>
+           <section className="flex justify-center items-center" id="load-more-projects">
             <Link href="https://sparkling-cardinal-fde.notion.site/Projects-1ebd9e28b0d480f4a279ccc4ae611e03?pvs=4" target="_blank" rel="noopener noreferrer">
-            <ShinyButton>More Projects</ShinyButton>
+            <RainbowButton>More Projects </RainbowButton>
             </Link>
           </section>
+         </BlurFade>
           <section id="hackathons">
             <div className="space-y-12 w-full py-12">
               <BlurFade delay={BLUR_FADE_DELAY * 13}>
