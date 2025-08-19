@@ -107,19 +107,31 @@ export const DATA = {
   },
 
   work: [
-    {
-      company: "Freelance Web Developer",
-      href: "https://www.fiverr.com/umar_farooq_73",
-      badges: [],
-      location: "Remote",
-      title: "Full Stack Developer",
-      logoUrl: "/memoji.jpeg",
-      start: "2024",
-      end: "Present",
-      description:
-        "Worked on various freelance projects, including building responsive websites, implementing user authentication, and creating RESTful APIs using the MERN stack.",
-    },
-  ],
+  {
+    company: "Freelance Web Developer",
+    href: "https://www.fiverr.com/umar_farooq_73",
+    badges: [],
+    location: "Remote",
+    title: "Full Stack Developer",
+    logoUrl: "/memoji.jpeg",
+    start: "2024",
+    end: "Present",
+    description:
+      "Worked on various freelance projects, including building responsive websites, implementing user authentication, and creating RESTful APIs using the MERN stack.",
+  },
+  {
+    company: "InfotechBrains",
+    href: "https://infotechbrains.com", // replace with actual link if different
+    badges: [],
+    location: "Remote",
+    title: "Full Stack Developer Intern",
+    logoUrl: "/infotechbrains-logo.png", // add logo if you have one
+    start: "2025",
+    end: "Present",
+    description:
+      "Contributing as a Full Stack Developer Intern by building production-level projects. Responsibilities include designing scalable database schemas, implementing server-side rendering (SSR) and static site generation (SSG) for performance optimization, and enhancing overall application architecture.",
+  },
+],
   education: [
     {
       school: "Thanthai Periyar Government Institute of Technology",
