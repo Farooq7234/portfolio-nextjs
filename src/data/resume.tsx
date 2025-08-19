@@ -15,7 +15,7 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/Vellore",
   description:
     "I tinker around with my beloved laptop, exploring tools and bringing ideas to life through code",
-  summary: `I am Umar Farooq, a third-year Bachelor of Engineering student from India, currently studying Computer Science Engineering. As a **Full-stack Developer**, I enjoy both frontend and backend development equally. I am passionate about learning new technologies and building innovative projects that solve real-world problems.`,
+  summary: `I am Umar Farooq, a fourth-year Bachelor of Engineering student from India, currently studying Computer Science Engineering. As a **Full-stack Developer**, I enjoy both frontend and backend development equally. I am passionate about learning new technologies and building innovative projects that solve real-world problems.`,
   avatarUrl: "/umarfarooq.jpg",
   skills: [
     {
