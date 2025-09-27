@@ -132,6 +132,37 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "TypeArena - Master Your Typing Skills",
+      href: "",
+      dates: "2025",
+      active: true,
+      description:
+        "Practice typing, challenge friends, and track improvements with real-time stats in a sleek, minimalist interface.",
+      technologies: [
+        "Next.js",
+        "Tailwind CSS",
+        "prisma",
+        "next-auth",
+        "mongodb",
+        "shadcn",
+        "supabase",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://typefast-omega.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Farooq7234",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/typefast.png",
+      video: "",
+    },
+    {
       title: "Quality Keeper - AI SAAS",
       href: "",
       dates: "2025",
