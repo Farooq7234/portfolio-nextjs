@@ -51,14 +51,20 @@ export function ProjectCard({
         className={cn("block cursor-pointer", className)}
       >
         {video && (
-          <video
-            src={video}
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="pointer-events-none mx-auto h-40 w-full object-cover object-top" // needed because random black line at bottom of video
-          />
+          <div className="relative w-full h-40 overflow-hidden">
+            <video 
+              src={video} 
+              title="ImageKit video player" 
+
+              className="absolute top-0 left-0 w-full h-full pointer-events-none"
+              autoPlay={true}
+              muted={true}
+              loop={true}
+              controls={false}
+
+              
+            />
+          </div>
         )}
         {image && (
           <Image

@@ -171,8 +171,8 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/typefast.png",
-      video: "",
+      image: "",
+      video: "https://ik.imagekit.io/umarfarooqdev7390/typefast.mp4?updatedAt=1759302804083",
     },
     {
       title: "Quality Keeper - AI SAAS",
