@@ -19,7 +19,7 @@ export default function Page() {
   
       <>
         <main className="flex flex-col min-h-[100dvh] space-y-10 ">
-          <SmoothCursor/>
+          {/* <SmoothCursor/> */}
           <section id="hero">
             <div className="mx-auto w-full max-w-2xl space-y-8">
               <div className="gap-10 flex justify-between">
