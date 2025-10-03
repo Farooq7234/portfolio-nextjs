@@ -21,8 +21,8 @@ export default function Page() {
         <main className="flex flex-col min-h-[100dvh] space-y-10 ">
           {/* <SmoothCursor/> */}
           <section id="hero">
-            <div className="mx-auto w-full max-w-2xl space-y-8">
-              <div className="gap-10 flex justify-between">
+            <div className="mx-auto w-full space-y-8">
+              <div className="gap-10 flex justify-around">
                 <div className="flex-col flex flex-1 space-y-1.5">
                   <BlurFadeText
                     delay={BLUR_FADE_DELAY}

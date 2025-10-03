@@ -170,9 +170,14 @@ export const DATA = {
           href: "https://github.com/Farooq7234",
           icon: <Icons.github className="size-3" />,
         },
+        {
+          type: "LinkedIn",
+          href: "https://www.linkedin.com/posts/umarfarooqdev7390_nextjs-webdevelopment-typescript-activity-7379022149963091968-N4a6?utm_source=share&utm_medium=member_desktop&rcm=ACoAADm_FlgBPzBVcQXN1dR6Bz7asVIlw8X2SSY",
+          icon: <Icons.linkedin className="size-3" />,
+        },
       ],
-      image: "",
-      video: "https://ik.imagekit.io/umarfarooqdev7390/typefast.mp4?updatedAt=1759302804083",
+      image: "/typefast.png",
+      video: "",
     },
     {
       title: "Quality Keeper - AI SAAS",
