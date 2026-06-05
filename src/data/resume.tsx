@@ -1,11 +1,12 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 import { DiPostgresql } from "react-icons/di";
-import { FaNodeJs, FaPython } from "react-icons/fa";
-import { SiAppwrite, SiMongodb, SiExpress, SiDjango } from "react-icons/si";
+import { FaNodeJs, FaPython, FaJava } from "react-icons/fa";
+import { SiAppwrite, SiMongodb, SiExpress, SiDjango, SiDocker, SiKubernetes, SiRedux } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaReact } from "react-icons/fa6";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { AiOutlineCode } from "react-icons/ai";
 
 export const DATA = {
   name: "Umar Farooq",
@@ -15,8 +16,8 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/Vellore",
   description:
     "I tinker around with my beloved laptop, exploring tools and bringing ideas to life through code",
-  summary: `I am Umar Farooq, a fourth-year Bachelor of Engineering student from India, currently studying Computer Science Engineering. As a **Full-stack Developer**, I enjoy both frontend and backend development equally. I am passionate about learning new technologies and building innovative projects that solve real-world problems.`,
-  avatarUrl: "/umarfarooq.jpg",
+  summary: `I am Umar Farooq, a **Bachelor of Engineering graduate** from India with a degree in **Computer Science Engineering**. As a **Software Engineer**, I enjoy both **frontend** and **backend development** equally. I am passionate about **learning new technologies** and building **innovative projects** that solve **real-world problems**.`,
+  avatarUrl: "/umarfarooq.png",
   skills: [
     {
       name: "Next.js",
@@ -37,6 +38,26 @@ export const DATA = {
     {
       name: "Tailwind CSS",
       icon: <RiTailwindCssFill className="size-3" />,
+    },
+    {
+      name: "Docker",
+      icon: <SiDocker className="size-3" />,
+    },
+    {
+      name: "Kubernetes",
+      icon: <SiKubernetes className="size-3" />,
+    },
+    {
+      name: "Java",
+      icon: <FaJava className="size-3" />,
+    },
+    {
+      name: "Redux Toolkit",
+      icon: <SiRedux className="size-3" />,
+    },
+    {
+      name: "Data Structures & Algorithms",
+      icon: <AiOutlineCode className="size-3" />,
     },
     {
       name: "Node.js",
@@ -108,16 +129,16 @@ export const DATA = {
 
   work: [
   {
-    company: "Freelance Web Developer",
-    href: "https://www.fiverr.com/umar_farooq_73",
+    company: "TripFactory",
+    href: "https://tripfactory.com",
     badges: [],
     location: "Remote",
-    title: "Full Stack Developer",
-    logoUrl: "/memoji.jpeg",
-    start: "2024",
+    title: "Software Development Engineer I",
+    logoUrl: "/tripfactory-logo.png",
+    start: "Jan 2026",
     end: "Present",
     description:
-      "Worked on various freelance projects, including building responsive websites, implementing user authentication, and creating RESTful APIs using the MERN stack.",
+      "Working as a Software Development Engineer I on scalable web applications, building backend services, integrating APIs, and improving platform performance across the product stack.",
   },
   {
     company: "InfotechBrains",
@@ -127,9 +148,21 @@ export const DATA = {
     title: "Full Stack Developer Intern",
     logoUrl: "/infotechbrains-logo.png", // add logo if you have one
     start: "2025",
-    end: "Present",
+    end: "2025",
     description:
       "Contributing as a Full Stack Developer Intern by building production-level projects. Responsibilities include designing scalable database schemas, implementing server-side rendering (SSR) and static site generation (SSG) for performance optimization, and enhancing overall application architecture.",
+  },
+  {
+    company: "Freelance Web Developer",
+    href: "https://www.fiverr.com/umar_farooq_73",
+    badges: [],
+    location: "Remote",
+    title: "Full Stack Developer",
+    logoUrl: "/memoji.jpeg",
+    start: "2024",
+    end: "2024",
+    description:
+      "Worked on various freelance projects, including building responsive websites, implementing user authentication, and creating RESTful APIs using the MERN stack.",
   },
 ],
   education: [
