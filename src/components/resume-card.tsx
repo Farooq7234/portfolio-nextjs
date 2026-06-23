@@ -44,9 +44,9 @@ export const ResumeCard = ({
       className="block cursor-pointer"
       onClick={handleClick}
     >
-      <Card className="flex p-6">
-        <div className="flex-none">
-          <Avatar className="border size-12 m-auto bg-muted-background dark:bg-foreground">
+          <Card className="flex p-6 border border-muted-background dark:border-foreground/20 shadow-sm">
+        <div className="flex-none ">
+          <Avatar className="border size-12 m-auto bg-muted-background dark:bg-foreground ">
             <AvatarImage
               src={logoUrl}
               alt={altText}
