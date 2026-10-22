@@ -244,36 +244,6 @@ export const DATA = {
       video: "",
     },
     {
-      title: "ReelsPro - Video Sharing Platform",
-      href: "",
-      dates: "2025",
-      active: true,
-      description:
-        "Developed a video-sharing platform similar to Instagram Reels, allowing users to upload. Built using Next.js, Tailwind CSS, and MongoDB.",
-      technologies: [
-        "Next.js",
-        "Tailwind CSS",
-        "MongoDB",
-        "ImageKit",
-        "DaisyUI",
-        "next-auth.js",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://reelspro-beige.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/Farooq7234/reelspro",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/reelpro.png",
-      video: "",
-    },
-    {
       title: "TrueFeedBack - Anonymous Feedback",
       href: "https://true-feed-back-gules.vercel.app/",
       dates: "2024",
