@@ -1,8 +1,14 @@
 import { Icons } from "@/components/icons";
-import { FileTextIcon, HomeIcon } from "lucide-react";
+import {
+  BrainCircuitIcon,
+  DatabaseIcon,
+  FileTextIcon,
+  HomeIcon,
+  WorkflowIcon,
+} from "lucide-react";
 import { DiPostgresql } from "react-icons/di";
 import { FaNodeJs, FaPython, FaJava } from "react-icons/fa";
-import { SiAppwrite, SiMongodb, SiExpress, SiDjango, SiDocker, SiKubernetes, SiRedux } from "react-icons/si";
+import { SiAppwrite, SiMongodb, SiExpress, SiDjango, SiDocker, SiKubernetes, SiRedux, SiLangchain, SiFastapi } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaReact } from "react-icons/fa6";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -87,6 +93,26 @@ export const DATA = {
     {
       name: "Appwrite",
       icon: <SiAppwrite className="size-3" />,
+    },
+    {
+      name: "RAG",
+      icon: <BrainCircuitIcon className="size-3" />,
+    },
+    {
+      name: "LangChain",
+      icon: <SiLangchain className="size-3" />,
+    },
+    {
+      name: "LangGraph",
+      icon: <WorkflowIcon className="size-3" />,
+    },
+    {
+      name: "FastAPI",
+      icon: <SiFastapi className="size-3" />,
+    },
+    {
+      name: "Pinecone",
+      icon: <DatabaseIcon className="size-3" />,
     },
   ],
   navbar: [
@@ -178,6 +204,31 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "ApplyFast - Job Application Tracker",
+      href: "",
+      dates: "2026",
+      active: true,
+      description:
+        "Job application tracker that sends outreach emails and tracks delivery, opens, clicks and replies, built with Next.js, Prisma, Resend, Better Auth, PostgreSQL and Apollo.",
+      technologies: [
+        "Next.js",
+        "Prisma",
+        "Resend",
+        "Better Auth",
+        "PostgreSQL",
+        "Apollo",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://applyfast.farooqx.in/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/applyfast.png",
+      video: "",
+    },
+    {
       title: "TypeArena - Master Your Typing Skills",
       href: "",
       dates: "2025",
@@ -196,7 +247,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://typefast-omega.vercel.app/",
+          href: "https://typefast.farooqx.in",
           icon: <Icons.globe className="size-3" />,
         },
         {
@@ -211,7 +262,7 @@ export const DATA = {
         },
       ],
       image: "/typefast.png",
-      video: "",
+      video: "https://youtu.be/SEzkCVp4wjU?si=LpB3uT6SITUqO7KD",
     },
     {
       title: "Quality Keeper - AI SAAS",

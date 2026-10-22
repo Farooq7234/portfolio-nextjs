@@ -6,10 +6,47 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { HeroVideoDialog } from "@/components/ui/hero-video-dialog";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import Markdown from "react-markdown";
+
+function parseYouTubeUrl(url: string) {
+  try {
+    const parsed = new URL(url);
+    const host = parsed.hostname.replace(/^www\./, "");
+    let id: string | null = null;
+
+    if (host === "youtu.be") {
+      id = parsed.pathname.slice(1).split("/")[0] || null;
+    } else if (
+      host === "youtube.com" ||
+      host === "m.youtube.com" ||
+      host === "music.youtube.com"
+    ) {
+      if (parsed.pathname === "/watch") {
+        id = parsed.searchParams.get("v");
+      } else if (
+        parsed.pathname.startsWith("/embed/") ||
+        parsed.pathname.startsWith("/shorts/") ||
+        parsed.pathname.startsWith("/live/")
+      ) {
+        id = parsed.pathname.split("/")[2] || null;
+      }
+    }
+
+    if (!id) return null;
+
+    return {
+      id,
+      embedUrl: `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&modestbranding=1&iv_load_policy=3&playsinline=1`,
+      thumbnailUrl: `https://img.youtube.com/vi/${id}/maxresdefault.jpg`,
+    };
+  } catch {
+    return null;
+  }
+}
 
 interface Props {
   title: string;
@@ -40,40 +77,60 @@ export function ProjectCard({
   links,
   className,
 }: Props) {
+  const youtube = video ? parseYouTubeUrl(video) : null;
+
   return (
     <Card
       className={
         "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full"
       }
     >
-      <Link
-        href={href || "#"}
-        className={cn("block cursor-pointer", className)}
-      >
-        {video && (
-          <div className="relative max-w-full h-full overflow-hidden">
-            <video
-              src={video}
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="pointer-events-none mx-auto h-full w-full object-cover object-top" // needed because random black line at bottom of video
-
-
-            />
-          </div>
-        )}
-        {image && (
-          <Image
-            src={image}
-            alt={title}
-            width={500}
-            height={500}
-            className="h-full w-full overflow-hidden object-cover object-top"
+      {youtube ? (
+        <div
+          className={cn(
+            "relative aspect-video w-full overflow-hidden",
+            className
+          )}
+        >
+          <HeroVideoDialog
+            videoSrc={youtube.embedUrl}
+            thumbnailSrc={image || youtube.thumbnailUrl}
+            thumbnailAlt={title}
+            animationStyle="from-center"
+            className="h-full w-full"
+            thumbnailClassName="h-full w-full rounded-none border-0 object-cover object-top shadow-none"
           />
-        )}
-      </Link>
+        </div>
+      ) : (
+        <Link
+          href={href || "#"}
+          className={cn("block cursor-pointer", className)}
+        >
+          {video && (
+            <div className="relative max-w-full h-full overflow-hidden">
+              <video
+                src={video}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="pointer-events-none mx-auto h-full w-full object-cover object-top" // needed because random black line at bottom of video
+
+
+              />
+            </div>
+          )}
+          {image && (
+            <Image
+              src={image}
+              alt={title}
+              width={500}
+              height={500}
+              className="h-full w-full overflow-hidden object-cover object-top"
+            />
+          )}
+        </Link>
+      )}
       <CardHeader className="px-2">
         <div className="space-y-1">
           <CardTitle className="mt-1 text-base">{title}</CardTitle>
