@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { FileTextIcon, HomeIcon } from "lucide-react";
 import { DiPostgresql } from "react-icons/di";
 import { FaNodeJs, FaPython, FaJava } from "react-icons/fa";
 import { SiAppwrite, SiMongodb, SiExpress, SiDjango, SiDocker, SiKubernetes, SiRedux } from "react-icons/si";
@@ -18,6 +18,7 @@ export const DATA = {
     "I tinker around with my beloved laptop, exploring tools and bringing ideas to life through code",
   summary: `I am Umar Farooq, a **Bachelor of Engineering graduate** from India with a degree in **Computer Science Engineering**. As a **Software Engineer**, I enjoy both **frontend** and **backend development** equally. I am passionate about **learning new technologies** and building **innovative projects** that solve **real-world problems**.`,
   avatarUrl: "/umarfarooq.png",
+  resumeUrl: "https://drive.google.com/file/d/1TWBk0RJDtsBuc9XJtQh8hPWOIEK9oGvV/view?usp=sharing",
   skills: [
     {
       name: "Next.js",
@@ -91,9 +92,9 @@ export const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     {
-      href: "https://umarfarooq.hashnode.dev",
-      icon: NotebookIcon,
-      label: "Blog",
+      href: "/resume",
+      icon: FileTextIcon,
+      label: "Resume",
     },
   ],
   contact: {
