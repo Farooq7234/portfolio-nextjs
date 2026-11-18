@@ -226,7 +226,7 @@ export const DATA = {
         },
       ],
       image: "/applyfast.png",
-      video: "",
+      video: "https://youtu.be/2AzfaATbAIY?si=AQcgvmQ0xgX0L4mI",
     },
     {
       title: "TypeArena - Master Your Typing Skills",
